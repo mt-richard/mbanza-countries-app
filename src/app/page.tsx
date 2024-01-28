@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <main className="bg-white h-screen">
       <Navbar/>
-      <div className="flex justify-between px-20 py-10">
+      <div className="md:flex justify-between md:px-20 px-5 py-10">
         <SearchBar/>
         <SelectBox/>
       </div>

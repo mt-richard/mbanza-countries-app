@@ -2,7 +2,7 @@
 import React from "react"
 export default function CountryBadge({ flag,name,population,region,capital}: any){
     return(
-        <div className="text-gray-700 border border-collapse rounded-lg">
+        <div className="text-gray-700 border border-collapse rounded-lg shadow-lg pb-2">
             <div className="h-60">
                 <img src={flag} alt="" className="rounded h-56 w-full object-cover" />
             </div>

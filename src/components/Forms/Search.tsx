@@ -7,7 +7,7 @@ export default function SearchBar(){
             <span className="absolute m-4 text-xl">
                 <IoMdSearch />
             </span>
-            <input type="search" name="search" id="search" placeholder="Search here ....." className="p-3 px-12 w-[500px] rounded outline-none border border-collapse"/>
+            <input type="search" name="search" id="search" placeholder="Search here ....." className="p-3 px-12 md:w-[500px] rounded outline-none border border-collapse"/>
         </div>
     )
 }

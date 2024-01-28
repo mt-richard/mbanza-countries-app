@@ -6,7 +6,7 @@ function HomePage() {
   const { data, error, isLoading } = useGetCountryQuery();
 
   if (isLoading) {
-    return <div>Loading...</div>;
+    return <div className='items-center text-center'>Loading...</div>;
   }
 
   if (error) {
@@ -14,7 +14,7 @@ function HomePage() {
   }
 
   return (
-    <div className='px-20 w-full grid grid-cols-4 gap-20'>
+    <div className='md:px-20 px-5 md:w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-20'>
 
       {data && Array.isArray(data) ? (
         data.map((item) => (
