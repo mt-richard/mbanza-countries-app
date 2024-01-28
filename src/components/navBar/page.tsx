@@ -3,7 +3,7 @@ import { MdOutlineDarkMode } from "react-icons/md";
 
 export default function Navbar(){
     return(
-        <div className="flex justify-between items-center bg-white py-2 md:px-20 px-5 border border-b-gray-300 ">
+        <div className="flex justify-between items-center bg-white py-2 md:px-20 px-5 border-b border-b-gray-300 ">
             <div>
                 <h1 className="md:text-xl text-md text-gray-900 font-black">Where in the world?</h1>
             </div>

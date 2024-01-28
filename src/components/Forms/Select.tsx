@@ -4,7 +4,7 @@ import React from "react"
 
 export default function SelectBox(){
     return(
-        <div className="text-gray-700 ">
+        <div className="text-gray-700 md:mt-0 mt-3 ">
             <select name="region" id="reg" className="py-3 px-5 rounded border border-collapse outline-none">
                 <option value="" className="p-2 w-20" selected>Filter by Region</option>
                 <option value="" className="">America</option>

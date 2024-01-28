@@ -11,10 +11,7 @@ export default function Home() {
   return (
     <main className="bg-white h-screen">
       <Navbar/>
-      <div className="md:flex justify-between md:px-20 px-5 py-10">
-        <SearchBar/>
-        <SelectBox/>
-      </div>
+      
       
       <div>
         {/* all countries */}
