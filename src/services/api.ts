@@ -8,9 +8,11 @@ interface Country {
   };
   name: {
     common: string;
+    official: string;
     nativeName: {
       cat: {
         common: string;
+        official: string;
       };
     };
   };
@@ -29,9 +31,8 @@ interface Country {
   };
   borders: [string, string];
  
-  
-
 }
+
 
 export const api = createApi({
   baseQuery: fetchBaseQuery({ baseUrl: 'https://restcountries.com/v3.1/' }),
@@ -40,8 +41,7 @@ export const api = createApi({
       query: () => 'all',
     }),
     getCountryDetails: builder.query<Country[], any>({
-      // query: () => `name/${name}`
-      query: () => `name/Andorra`
+      query: (name) => `name/${name}`
     }),
   }),
 });

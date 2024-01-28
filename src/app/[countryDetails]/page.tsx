@@ -6,9 +6,9 @@ import { useGetCountryDetailsQuery } from '../../services/api';
 import Navbar from '@/components/navBar/page';
 import Link from 'next/link';
 
-function CountryDetailPage({countryName}: any) {
+function CountryDetailPage() {
   
-  const { data, error, isLoading } = useGetCountryDetailsQuery(countryName);
+  const { data, error, isLoading } = useGetCountryDetailsQuery('Andorra');
 
   if (isLoading) {
     return <div className='items-center text-center'>Loading...</div>;
@@ -41,10 +41,10 @@ function CountryDetailPage({countryName}: any) {
                 <img src={item.flags.png} alt={`Flag of ${item.name.common}`} className='md:w-4/5 object-cover'/>
             </div>
             <div className='md:w-1/2 md:py-20'>
-              <h1 className='font-bold py-2'>{item.name.common}</h1>
+              <h1 className='font-bold py-2'>{item.name.official}</h1>
               <div className='md:flex'>
                   <ul className='w-1/2' >
-                    <li className='list'>Native Name:<span className='font-light'> {item.name.nativeName.cat.common}</span></li>
+                    <li className='list'>Native Name:<span className='font-light'> {item.name.common}</span></li>
                     <li className='list'>Population:<span className='font-light'> {item.population}</span></li>
                     <li className='list'>Region:<span className='font-light'> {item.region}</span></li>
                     <li className='list'>Sub-Region:<span className='font-light'> {item.subregion}</span></li>

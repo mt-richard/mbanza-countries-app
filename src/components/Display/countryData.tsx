@@ -40,8 +40,6 @@ function HomePage() {
     return <div className='items-center text-center'>Loading...</div>;
   }
 
-  
-
   const countriesToDisplay = filteredData || data || [];
 
   return (
@@ -67,7 +65,7 @@ function HomePage() {
             
           </Link>
         ))}
-        {countriesToDisplay.length === 0 && <div>No data available</div>}
+        {countriesToDisplay.length === 0 && <div className='w-full items-center text-center'>No data available</div>}
       </div>
     </div>
   );
